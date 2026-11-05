@@ -1,0 +1,73 @@
+{
+  "name": "ERP Readiness Assessment",
+  "version": "1.0.0",
+  "scale": [
+    { "value": 0, "label": "Not in place" },
+    { "value": 1, "label": "Starting" },
+    { "value": 2, "label": "Partly in place" },
+    { "value": 3, "label": "Consistently in place" }
+  ],
+  "bands": [
+    { "min": 85, "name": "Advanced readiness", "text": "The foundations are strong. Validate the remaining gaps before entering a formal project gate." },
+    { "min": 70, "name": "Prepared with gaps", "text": "The organization has a workable base, but targeted actions should precede design and configuration." },
+    { "min": 40, "name": "Developing readiness", "text": "Several foundations are emerging. Close the lowest-scoring domains before committing to delivery dates." },
+    { "min": 0, "name": "Foundation needed", "text": "Core prerequisites are not yet consistent. Begin with governance, ownership, and a focused readiness plan." }
+  ],
+  "domains": [
+    {
+      "id": "governance",
+      "name": "Governance and sponsorship",
+      "description": "Decision rights, scope, ownership, and executive support.",
+      "recommendation": "Confirm an accountable sponsor, decision rights, scope, and measurable outcomes before solution design.",
+      "questions": [
+        "An accountable executive sponsor is identified and available for decisions.",
+        "The program scope, business outcomes, and success measures are documented.",
+        "Project roles, decision rights, and escalation paths are understood."
+      ]
+    },
+    {
+      "id": "process",
+      "name": "Process ownership",
+      "description": "Current-state knowledge and ownership of future-state decisions.",
+      "recommendation": "Document priority processes and assign owners who can approve future-state decisions.",
+      "questions": [
+        "Core business processes are documented at a level suitable for solution design.",
+        "Process owners can approve changes to the way work will be performed.",
+        "Known pain points and regulatory requirements are linked to target processes."
+      ]
+    },
+    {
+      "id": "data",
+      "name": "Data readiness",
+      "description": "Data ownership, quality, migration scope, and validation.",
+      "recommendation": "Inventory source data, assign owners, and define quality and validation rules before migration planning.",
+      "questions": [
+        "Source systems and data owners have been identified.",
+        "Material data-quality issues are known and have assigned remediation actions.",
+        "Migration validation rules and business sign-off responsibilities are defined."
+      ]
+    },
+    {
+      "id": "testing",
+      "name": "Testing and controls",
+      "description": "Acceptance criteria, end-to-end scenarios, and compliance evidence.",
+      "recommendation": "Define acceptance criteria and end-to-end scenarios early, including evidence for regulated controls.",
+      "questions": [
+        "Business acceptance criteria are defined before configuration begins.",
+        "End-to-end test scenarios include critical operations and regulatory controls.",
+        "A formal method exists to record defects, decisions, approvals, and evidence."
+      ]
+    },
+    {
+      "id": "people",
+      "name": "People and change readiness",
+      "description": "User participation, training, communications, and support transition.",
+      "recommendation": "Reserve user capacity for design and testing, then assign training, communication, and cutover support owners.",
+      "questions": [
+        "Representative users are available for design reviews and acceptance testing.",
+        "Training and communication responsibilities are assigned to named owners.",
+        "The organization has a plan for cutover support and post-launch stabilization."
+      ]
+    }
+  ]
+}
